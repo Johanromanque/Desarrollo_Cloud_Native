@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/plataforma-cursos:latest ./plataforma-cursos
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/plataforma-cursos:latest "./Actividad Formativa 1/plataforma-cursos"
 
       - name: Push Docker Image
         run: |
